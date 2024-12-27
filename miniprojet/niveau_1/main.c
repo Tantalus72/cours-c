@@ -5,7 +5,7 @@ int main() {
     char dialogue;
 
     while (continu == false) {
-        printf("Veuillez saisir un type d'opération (a->addition,s->soustraction,d->division,m->multiplication)\n"
+        printf("Veuillez saisir un type d'operation (a->addition,s->soustraction,d->division,m->multiplication)\n"
                "Si vous souhaitez arreter entrer 'n' ");
         scanf("%s", &dialogue);
         if (dialogue == 'n') {
@@ -17,7 +17,7 @@ int main() {
                 printf("Entrez les deux nombres à additionner\n");
                 printf("premier nombre :\n");
                 scanf("%f", &nombre1);
-                printf("deuxième nombre :\n");
+                printf("deuxieme nombre :\n");
                 scanf("%f", &nombre2);
                 printf("La somme est : %f\n", nombre1 + nombre2);
                 break;
@@ -25,15 +25,15 @@ int main() {
                 printf("Entrez les deux nombres à soustraire\n");
                 printf("premier nombre :\n");
                 scanf("%f", &nombre1);
-                printf("deuxième nombre :\n");
+                printf("deuxieme nombre :\n");
                 scanf("%f", &nombre2);
-                printf("La différence est : %f\n", nombre1 - nombre2);
+                printf("La difference est : %f\n", nombre1 - nombre2);
                 break;
             case 'd':
                 printf("Entrez les deux nombres à diviser\n");
                 printf("premier nombre :\n");
                 scanf("%f", &nombre1);
-                printf("deuxième nombre :\n");
+                printf("deuxieme nombre :\n");
                 scanf("%f", &nombre2);
                 if (nombre2==0){
                     printf("Erreur : Division par zéro impossible\n");
@@ -47,12 +47,12 @@ int main() {
                 printf("Entrez les deux nombres à multiplier\n");
                 printf("premier nombre :\n");
                 scanf("%f", &nombre1);
-                printf("deuxième nombre :\n");
+                printf("deuxieme nombre :\n");
                 scanf("%f", &nombre2);
                 printf("Le produit est : %f\n", nombre1 * nombre2);
                 break;
         }
-        printf("Voulez-vous réaliser une autre opération? (o/n)\n");
+        printf("Voulez-vous réaliser une autre operation? (o/n)\n");
         scanf("%s", &dialogue);
         if (dialogue == 'n') {
             continu = true;
